@@ -1,0 +1,11 @@
+Model Information:
+* title:	Portable Camping Pot
+* source:	https://sketchfab.com/3d-models/portable-camping-pot-e0b68bb9bee54365a285c3af82917d27
+* author:	GameDev Nick (https://sketchfab.com/GameDevNick)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Portable Camping Pot" (https://sketchfab.com/3d-models/portable-camping-pot-e0b68bb9bee54365a285c3af82917d27) by GameDev Nick (https://sketchfab.com/GameDevNick) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

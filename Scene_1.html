@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-simple-link-component@1.0.0/dist/aframe-simple-link-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script>
+      AFRAME.registerComponent("navigate-on-click", {
+        schema: {
+          url: { default: "" },
+        },
+
+        init: function () {
+          var data = this.data;
+          var el = this.el;
+
+          el.addEventListener("click", function () {
+            window.location.href = data.url;
+          });
+        },
+      });
+    </script>
+    <title>VR Scene</title>
+  </head>
+  <body>
+    <a-scene xr-mode-ui="enterARButton: #ARButton" cursor="rayOrigin: mouse">
+      <a id="ARButton" href="ar.html"></a>
+
+      <a-entity position="5 5 0">
+        <!-- Camera Entity -->
+        <a-entity
+          id="camera"
+          acceleration="200"
+          camera
+          look-controls
+          wasd-controls
+        ></a-entity>
+      </a-entity>
+
+      <a-assets>
+        <a-asset-item
+          id="riverside_camp"
+          src="Asset/lowpoly_landscap_forest_camp/scene.gltf"
+        ></a-asset-item>
+
+        <img src="Asset/img/vortex.png" id="Portal" alt="Portal" />
+      </a-assets>
+
+      <a-entity
+        gltf-model="#riverside_camp"
+        position="-2.5 5 -2.5"
+        scale="15 15 15"
+      ></a-entity>
+
+      <a-entity environment="preset: forest"></a-entity>
+
+      <a-link
+        href="Scene_2.html"
+        title="Desert Camp"
+        position="10 5 10"
+        image="#Portal"
+      ></a-link>
+
+      <a-link
+        href="Scene_3.html"
+        title="Siege Camp"
+        position="7 5 10"
+        image="#Portal"
+      ></a-link>
+
+      <a-link
+        href="Scene_4.html"
+        title="Forest Camp"
+        position="4 5 10"
+        image="#Portal"
+      ></a-link>
+
+      <a-link
+        href="ar.html"
+        title="AR"
+        position="1 5 10"
+        image="#Portal"
+      ></a-link>
+    </a-scene>
+  </body>
+</html>

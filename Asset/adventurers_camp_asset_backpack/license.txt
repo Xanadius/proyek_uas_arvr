@@ -1,0 +1,11 @@
+Model Information:
+* title:	Adventurer's Camp Asset Backpack
+* source:	https://sketchfab.com/3d-models/adventurers-camp-asset-backpack-48c41a3739674539a148d11a5b0b7d6c
+* author:	FreijaDeGraeve (https://sketchfab.com/FreijaDeGraeve)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Adventurer's Camp Asset Backpack" (https://sketchfab.com/3d-models/adventurers-camp-asset-backpack-48c41a3739674539a148d11a5b0b7d6c) by FreijaDeGraeve (https://sketchfab.com/FreijaDeGraeve) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

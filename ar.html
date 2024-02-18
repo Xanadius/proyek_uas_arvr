@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <title>AR Scene</title>
+    <style>
+      body {
+        margin: 0px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene xr-mode-ui="enterVRButton: #VRButton" embedded
+      arjs="detectionMode:mono_and_matrix;matrixCodeType:3x3_PARITY65;"
+    >
+      <a id="VRButton" href="Scene_1.html"></a>
+
+      <!-- Marker 01 -->
+      <a-marker type="barcode" value="0">
+        <a-entity
+          id="camping_bag"
+          gltf-model="Asset/adventurers_camp_asset_backpack/scene.gltf"
+          position="0 0 0"
+          scale="1 1 1"
+        ></a-entity>
+      </a-marker>
+
+      <!-- Marker 02 -->
+      <a-marker type="barcode" value="1">
+        <a-entity
+          id="camping_pot"
+          gltf-model="Asset/portable_camping_pot/scene.gltf"
+          position="0 0 0"
+          scale="1 1 1"
+        ></a-entity>
+      </a-marker-camera>
+
+      <!-- Marker 03 -->
+      <a-marker type="barcode" value="2">
+        <a-entity
+          id="camping_stove"
+          gltf-model="Asset/portable_gas_camping_stove/scene.gltf"
+          position="0 0 0"
+          scale="1 1 1"
+        ></a-entity>
+      </a-marker>
+
+        <!-- Camera -->
+        <a-entity camera>
+          <a-cursor></a-cursor>
+        </a-entity>
+    </a-scene>
+  </body>
+</html>
